@@ -8,7 +8,7 @@ const Temp = () => {
 
   const getWeatherInfo = useCallback(async (city) => {
     try {
-      const response = await fetch(`http://localhost:8000/get_weather?city=${searchValue}`);
+      const response = await fetch(`http://54.197.97.97/get_weather?city=${searchValue}`);
       const data = await response.json();
 
       setTempInfo(data);
